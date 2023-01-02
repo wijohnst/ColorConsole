@@ -39,3 +39,6 @@ dist/**/*
 
 # ignore yarn.lock
 package.lock
+
+# ignore nodemon config
+.nodemon.json
