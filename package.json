@@ -1,11 +1,12 @@
 {
   "name": "@wijohnst/color_console",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"start:dev" : "npx nodemon"
+		"start:dev" : "npx nodemon",
+		"build": "tsc"
   },
   "keywords": [],
   "author": "",
