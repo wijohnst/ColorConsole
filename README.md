@@ -21,7 +21,7 @@ npm install @wijohnst/color_console
 Import and instantiate a new `ColorConsole`. Pass a regular string and prefix with any of the 8 supported `color_` values to output text in that color.
 
 ```other
-import ColorConsole from '@wijohnst/color_console';
+import { ColorConsole } from '@wijohnst/color_console';
 
 const colorConsole = new ColorConsole();
 

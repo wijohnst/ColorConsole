@@ -1,12 +1,18 @@
 {
   "name": "@wijohnst/color_console",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "1.1.0",
+	 "main": "./lib/index.js",
+	 "types": "./lib/index.d.ts",
+  "description": "Semantic, colorful console logging for Node / JavaScript / Typescript",
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/wijohnst/ColorConsole"
+	},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-		"start:dev" : "npx nodemon",
-		"build": "tsc"
+    "start:dev": "npx nodemon",
+    "build": "tsc",
+		"build:watch": "tsc --watch"
   },
   "keywords": [],
   "author": "",
