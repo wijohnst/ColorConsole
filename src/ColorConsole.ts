@@ -18,7 +18,7 @@ export class ColorConsole{
 
 	public log(stringToPrint: string){
 		console.log(colorStrings.reduce((finalString : string, color : string): string => {
-			let matcher = new RegExp(color, "g");
+			const matcher = new RegExp(color, "g");
 			return finalString.replace(matcher,colorMap[color])
 		},stringToPrint))
 	}
