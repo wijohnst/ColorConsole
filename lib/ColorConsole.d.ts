@@ -1,3 +1,3 @@
 export declare class ColorConsole {
-    log(stringToPrint: string): void;
+  log(stringToPrint: string): void;
 }

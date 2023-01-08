@@ -1,1 +1,1 @@
-export * from './ColorConsole';
+export * from "./ColorConsole";
