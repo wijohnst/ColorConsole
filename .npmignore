@@ -1,3 +1,6 @@
 [DevDependencies]
 nodemon.json
 tsconfig.json
+babel.config.js
+.eslintignore
+.eslintrc.json
