@@ -1,6 +1,6 @@
 type ColorMap = { [key: string]: string };
 
-const colorMap: ColorMap = {
+export const colorMap: ColorMap = {
   black_: "\u001b[30m",
   red_: "\u001b[31m",
   green_: "\u001b[32m",
@@ -13,13 +13,15 @@ const colorMap: ColorMap = {
 };
 
 const colorStrings: string[] = Object.keys(colorMap);
+export function generateStringWithColorEscapeCode(stringToPrint: string) : string {
+	return colorStrings.reduce((finalString: string, color: string): string => {
+		const matcher = new RegExp(color, "g");
+		return finalString.replace(matcher, colorMap[color]);
+	}, stringToPrint) 
+}
 export class ColorConsole {
   public log(stringToPrint: string) {
-    console.log(
-      colorStrings.reduce((finalString: string, color: string): string => {
-        const matcher = new RegExp(color, "g");
-        return finalString.replace(matcher, colorMap[color]);
-      }, stringToPrint)
-    );
+		const stringToPrintWithColorEscapeCode = generateStringWithColorEscapeCode(stringToPrint);
+    console.log(stringToPrintWithColorEscapeCode);
   }
 }
